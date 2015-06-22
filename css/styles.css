@@ -1,0 +1,29 @@
+/* FONTS */
+/*.megrim {
+  font-family: 'MegrimMedium';
+}*/
+
+/* TITLE */
+.title {
+  font-size: 6.5em;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+}
+
+.title p {
+  font-family: 'MegrimMedium';
+}
+
+.title1 {
+  color: red;
+  position: relative;
+  margin: 0;
+  left: -1%;
+}
+
+.title2 {
+  color: blue;
+  position: relative;
+  margin: -9% 0 0 0;
+}
