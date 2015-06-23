@@ -1,29 +1,37 @@
 /* FONTS */
-/*.megrim {
-  font-family: 'MegrimMedium';
-}*/
+.roboto {
+  font-family: 'Roboto Mono';
+}
 
 /* TITLE */
 .title {
-  font-size: 6.5em;
   text-align: center;
   position: absolute;
   width: 100%;
 }
 
-.title p {
+.title1, .title2 {
+  font-size: 6.5em;
+  position: relative;
   font-family: 'MegrimMedium';
 }
 
 .title1 {
   color: red;
-  position: relative;
   margin: 0;
   left: -1%;
 }
 
 .title2 {
   color: blue;
-  position: relative;
   margin: -9% 0 0 0;
+}
+
+.secondary-title {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.secondary-title p {
+  margin: 0;
 }
