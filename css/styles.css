@@ -3,13 +3,17 @@
   text-align: center;
 }
 
+.container {
+  height: 3000px;
+}
+
 /* FONTS */
 .roboto {
   font-family: 'Roboto Mono';
 }
 
 /* TITLE */
-.title {
+#title {
   position: absolute;
   width: 100%;
 }
@@ -37,4 +41,16 @@
 
 .secondary-title p {
   margin: 0;
+}
+
+/* ARROW */
+#down-arrow {
+  width: 256px;
+  height: 256px;
+  margin: 175px auto 400px auto;
+}
+
+#down-arrow img {
+  opacity: 0.1;
+  filter: alpha(opacity=10); /* For IE8 and earlier */
 }
