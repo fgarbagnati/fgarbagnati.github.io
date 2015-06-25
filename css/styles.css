@@ -12,6 +12,10 @@
   font-family: 'Roboto Mono';
 }
 
+.oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
 /* ARROW */
 #down-arrow {
   width: 256px;
