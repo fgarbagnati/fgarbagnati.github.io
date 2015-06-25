@@ -7,6 +7,18 @@
   height: 3000px;
 }
 
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.white {
+  color: white;
+}
+
 /* FONTS */
 .roboto {
   font-family: 'Roboto Mono';
@@ -41,13 +53,11 @@
 }
 
 .title1 {
-  color: red;
   margin: 0;
   left: -1%;
 }
 
 .title2 {
-  color: blue;
   margin: -9% 0 0 0;
 }
 
@@ -57,4 +67,23 @@
 
 .secondary-title p {
   margin: 0;
+}
+
+/* SKILLS */
+#skills {
+  position: relative;
+  background-color: #252525;
+}
+
+#skills h3 {
+  font-size: 4.0em;
+  font-weight: 700;
+}
+
+#skills p {
+  font-size: 2.8em;
+  width: 70%;
+  height: 70%;
+  text-align: justify;
+  margin: 0px auto;
 }
