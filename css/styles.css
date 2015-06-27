@@ -1,10 +1,13 @@
-/* GENERAL */
-.center {
-  text-align: center;
-}
-
+/********* GENERAL *********/
 .container {
   height: 3000px;
+  width: 100%;
+  position: fixed;
+  top: 50px;
+}
+
+.center {
+  text-align: center;
 }
 
 .red {
@@ -19,7 +22,7 @@
   color: white;
 }
 
-/* FONTS */
+/********* FONTS *********/
 .roboto {
   font-family: 'Roboto Mono';
 }
@@ -28,22 +31,25 @@
   font-family: 'Oswald', sans-serif;
 }
 
-/* ARROW */
+/********* ARROW *********/
 #down-arrow {
+  margin: 0px auto;
   width: 256px;
-  height: 256px;
-  margin: 175px auto 500px auto;
 }
 
 #down-arrow img {
+  width: 256px;
+  height: 256px;
   opacity: 0.1;
   filter: alpha(opacity=10); /* For IE8 and earlier */
+  margin: 0px auto;
 }
 
-/* TITLE */
+/********* TITLE *********/
 #title {
   position: absolute;
   width: 100%;
+  margin: 0px auto;
 }
 
 .title1, .title2 {
@@ -69,11 +75,11 @@
   margin: 0;
 }
 
-/* SKILLS */
+/********* SKILLS *********/
 #skills {
   position: relative;
   background-color: #252525;
-  margin-top: 1000px;
+  /*margin-top: 1200px;*/
 }
 
 #skills h3 {
