@@ -1,4 +1,7 @@
 /********* GENERAL *********/
+body {
+  background-color: #252525;
+}
 .container {
   height: 3000px;
   width: 100%;
