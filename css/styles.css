@@ -3,7 +3,6 @@
   height: 3000px;
   width: 100%;
   position: fixed;
-  top: 50px;
 }
 
 .center {
@@ -85,12 +84,15 @@
 #skills {
   position: relative;
   background-color: #252525;
-  /*margin-top: 1200px;*/
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
 
 #skills h3 {
   font-size: 4.0em;
   font-weight: 700;
+  margin: 20px auto;
 }
 
 #skills p {
