@@ -14,22 +14,30 @@
 
   <body>
     <div class="container">
-      <section id="down-arrow"
+      <section class="down-arrow"
       data-0="opacity:1; display:block;"
       data-500="opacity:0; display:none;">
         <img src="img/down_arrow.png" class="animated infinite pulse">
       </section>
 
       <section id="title" class="center"
-      data-500="opacity:0; transform:translateY(200px);"
+      data-500="opacity:0; transform:translateY(200px); display:block;"
       data-1000="opacity:1; transform:translateY(0px);"
+      data-1500="opacity:0; display:none;"
       >
         <p class="title1 red">M.Garb</p>
         <p class="title2 blue">M.Garb</p>
         <div class="secondary-title center">
           <p class="roboto">Mia Garbagnati</p>
         </div>
+        <div class="down-arrow small"
+        data-0="display:none;"
+        data-1050="opacity:1; display:block;"
+        data-1500="opacity:0; display:none;">
+          <img src="img/down_arrow.png" class="animated infinite pulse">
+        </div>
       </section>
+
 
       <!-- <section id="skills" class="oswald center">
         <h3 class="white">SKiLLS</h3>

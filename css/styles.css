@@ -32,12 +32,18 @@
 }
 
 /********* ARROW *********/
-#down-arrow {
+.down-arrow {
   margin: 0px auto;
   width: 256px;
 }
 
-#down-arrow img {
+.small img {
+  width: 128px !important;
+  height: 128px !important;
+  margin-top: 50px !important;
+}
+
+.down-arrow img {
   width: 256px;
   height: 256px;
   opacity: 0.1;
