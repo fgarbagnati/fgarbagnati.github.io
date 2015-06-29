@@ -28,6 +28,12 @@ body {
   color: #8f8f8f;
 }
 
+.inner-shadow {
+  -moz-box-shadow:    inset 0 0 30px 30px #252525;
+  -webkit-box-shadow: inset 0 0 30px 30px #252525;
+  box-shadow:         inset 0 0 30px 30px #252525;
+}
+
 /********* FONTS *********/
 .roboto {
   font-family: 'Roboto Mono';
@@ -35,6 +41,10 @@ body {
 
 .oswald {
   font-family: 'Oswald', sans-serif;
+}
+
+.source-sans-pro {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /********* ARROW *********/
@@ -105,4 +115,34 @@ body {
   height: 70%;
   text-align: justify;
   margin: 0px auto;
+}
+
+/********* ABOUT *********/
+#about {
+
+}
+
+#about .about {
+  background-image: url("../img/self.png");
+  background-repeat: no-repeat;
+  height: 716px;
+  width: 670px;
+  margin: auto;
+  position: relative;
+}
+
+#about .text {
+  position: absolute;
+  top: 0;
+  margin: 0 300px;
+}
+
+#about .heading {
+  font-size: 9.0em;
+  margin: 0;
+  padding-top: 70px;
+}
+
+.part1, .part2, .part3, .part4, .part5 {
+  font-size: 2.0em;
 }
