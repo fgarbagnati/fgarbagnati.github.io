@@ -154,13 +154,13 @@ body {
 #about .text {
   position: absolute;
   top: 0;
-  margin: 0 300px;
+  margin: 0 400px;
 }
 
 #about .heading {
   font-size: 9.0em;
   margin: 0;
-  padding-top: 70px;
+  padding-top: 185px;
 }
 
 .part1, .part2, .part3, .part4, .part5 {
