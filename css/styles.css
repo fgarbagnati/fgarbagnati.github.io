@@ -3,7 +3,7 @@ body {
   background-color: #252525;
 }
 .container {
-  height: 3000px;
+  height: 5000px;
   width: 100%;
   position: fixed;
 }
@@ -41,6 +41,9 @@ body {
 
 .shadow img {
   display: block;
+  -moz-box-shadow:    0 0 30px 30px #252525;
+  -webkit-box-shadow: 0 0 30px 30px #252525;
+  box-shadow:         0 0 30px 30px #252525;
 }
 
 .shadow::before {
@@ -138,13 +141,12 @@ body {
 }
 
 /********* ABOUT *********/
-#about {
-
-}
 
 #about .about {
-  height: 550px;
-  width: 412px;
+  background-image: url("../img/self_bw.png");
+  background-repeat: no-repeat;
+  height: 564px;
+  width: 813px;
   margin: auto;
   position: relative;
 }
