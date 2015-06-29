@@ -125,7 +125,13 @@ body {
 #about .about {
   background-image: url("../img/self.png");
   background-repeat: no-repeat;
-  height: 538px;
-  width: 720px;
+  height: 716px;
+  width: 670px;
   margin: auto;
+}
+
+#about .heading {
+  font-size: 7.0em;
+  margin: 0;
+  padding-top: 95px;
 }
