@@ -43,6 +43,10 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
+.source-sans-pro {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 /********* ARROW *********/
 .down-arrow {
   margin: 0px auto;
