@@ -154,15 +154,22 @@ body {
 #about .text {
   position: absolute;
   top: 0;
-  margin: 0 400px;
 }
 
 #about .heading {
   font-size: 9.0em;
-  margin: 0;
+  margin: 0 400px;
   padding-top: 185px;
 }
 
-.part1, .part2, .part3, .part4, .part5 {
-  font-size: 2.0em;
+#about p {
+  width: 60%;
+  margin: 0px auto;
+  padding-top: 50px;
+  text-align: justify;
+}
+
+.about-snippet {
+  font-size: 2.5em;
+  overflow: hidden;
 }
