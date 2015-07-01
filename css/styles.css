@@ -3,7 +3,7 @@ body {
   background-color: #252525;
 }
 .container {
-  height: 3000px;
+  height: 5000px;
   width: 100%;
   position: fixed;
 }
@@ -28,7 +28,30 @@ body {
   color: #8f8f8f;
 }
 
-.inner-shadow {
+/********* INNER SHADOW *********/
+.border {
+  padding: 10px;
+  background-color: #252525;
+}
+
+.shadow {
+  display: block;
+  position: relative;
+}
+
+.shadow img {
+  display: block;
+  -moz-box-shadow:    0 0 30px 30px #252525;
+  -webkit-box-shadow: 0 0 30px 30px #252525;
+  box-shadow:         0 0 30px 30px #252525;
+}
+
+.shadow::before {
+  display: block;
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 100%;
   -moz-box-shadow:    inset 0 0 30px 30px #252525;
   -webkit-box-shadow: inset 0 0 30px 30px #252525;
   box-shadow:         inset 0 0 30px 30px #252525;
@@ -118,15 +141,12 @@ body {
 }
 
 /********* ABOUT *********/
-#about {
-
-}
 
 #about .about {
-  background-image: url("../img/self.png");
+  background-image: url("../img/self_bw.png");
   background-repeat: no-repeat;
-  height: 716px;
-  width: 670px;
+  height: 564px;
+  width: 813px;
   margin: auto;
   position: relative;
 }
@@ -134,15 +154,21 @@ body {
 #about .text {
   position: absolute;
   top: 0;
-  margin: 0 300px;
 }
 
 #about .heading {
   font-size: 9.0em;
-  margin: 0;
-  padding-top: 70px;
+  margin: 0 400px;
+  padding-top: 185px;
 }
 
-.part1, .part2, .part3, .part4, .part5 {
-  font-size: 2.0em;
+#about p {
+  width: 60%;
+  margin: 0px auto;
+  padding-top: 50px;
+  text-align: justify;
+}
+
+.about-snippet {
+  font-size: 2.5em;
 }
