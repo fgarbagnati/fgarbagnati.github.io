@@ -172,3 +172,9 @@ body {
 .about-snippet {
   font-size: 2.5em;
 }
+
+/********* CONTACT *********/
+#contact h1 {
+  font-size: 20.0em;
+  margin: 0px auto;
+}
