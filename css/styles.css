@@ -147,7 +147,7 @@ body {
   background-repeat: no-repeat;
   height: 564px;
   width: 813px;
-  margin: auto;
+  margin: 50px auto;
   position: relative;
 }
 
@@ -165,8 +165,7 @@ body {
 #about p {
   width: 60%;
   margin: 0px auto;
-  padding-top: 50px;
-  text-align: justify;
+  padding-top: 75px;
 }
 
 .about-snippet {
