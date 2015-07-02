@@ -175,6 +175,23 @@ body {
 
 /********* CONTACT *********/
 #contact h1 {
-  font-size: 20.0em;
+  font-size: 14.0em;
   margin: 0px auto;
+}
+
+#contact .icons {
+  width: 945px;
+  margin: 0 auto;
+}
+
+#contact img {
+  margin: 0px 2px;
+}
+
+#contact .facebook {
+  float: left;
+}
+
+#contact .email, #contact .linkedin, #contact .github, #contact .instagram, #contact .googleplus, #contact .twitter {
+  display: inline;
 }
