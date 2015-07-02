@@ -179,6 +179,11 @@ body {
   margin: 0px auto;
 }
 
+#contact .text {
+  width: 945px;
+  margin: 0px auto 20px auto;
+}
+
 #contact .icons {
   width: 945px;
   margin: 0 auto;
