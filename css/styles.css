@@ -210,3 +210,18 @@ li {
 .twitter {
   font-size: 0.7em;
 }
+
+/********* FIN *********/
+#fin {
+  position: absolute;
+  height: 500px;
+  width: 100%;
+}
+#fin h1 {
+  text-align: right;
+  font-size: 10.0em;
+  margin: 0px 40px;
+  position: relative;
+  bottom: -50%;
+  right: 0;
+}
