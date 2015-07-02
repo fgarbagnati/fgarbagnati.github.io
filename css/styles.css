@@ -199,10 +199,10 @@ li {
   margin: 0px 2px;
 }
 
-/*#contact .facebook {
-  float: left;
+.placeholder {
+  display: block;
 }
 
-#contact .email, #contact .linkedin, #contact .github, #contact .instagram, #contact .googleplus, #contact .twitter {
-  display: inline;
-}*/
+.facebook, .email, .linkedin, .github, .instagram, .google-plus, .twitter {
+  display: none;
+}
