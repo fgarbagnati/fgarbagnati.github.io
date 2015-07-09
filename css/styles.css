@@ -92,8 +92,9 @@ body {
 /********* TITLE *********/
 #title {
   position: absolute;
-  width: 100%;
-  margin: 0px auto;
+  width: 810px;
+  left: 50%;
+  margin-left: -405px;
 }
 
 .title1, .title2 {
