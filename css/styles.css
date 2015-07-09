@@ -92,8 +92,9 @@ body {
 /********* TITLE *********/
 #title {
   position: absolute;
-  width: 100%;
-  margin: 0px auto;
+  width: 810px;
+  left: 50%;
+  margin-left: -405px;
 }
 
 .title1, .title2 {
@@ -135,8 +136,8 @@ body {
 
 #skills p {
   font-size: 2.8em;
-  width: 70%;
-  height: 70%;
+  width: 810px;
+  height: 500px;
   text-align: justify;
   margin: 0px auto;
 }
