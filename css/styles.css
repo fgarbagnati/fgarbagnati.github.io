@@ -153,20 +153,24 @@ body {
 }
 
 #about .text {
+  height: 564px;
+  width: 813px;
   position: absolute;
-  top: 0;
+  top: 50px;
+  left: 50%;
+  margin-left: -406px;
 }
 
 #about .heading {
   font-size: 9.0em;
-  margin: 0 300px;
+  margin: 0 auto;
   padding-top: 200px;
 }
 
 #about p {
-  width: 60%;
+  width: 95%;
   margin: 0px auto;
-  padding-top: 75px;
+  padding-top: 50px;
 }
 
 .about-snippet {
