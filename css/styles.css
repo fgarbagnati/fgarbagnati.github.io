@@ -38,6 +38,8 @@ body {
 .shadow {
   display: block;
   position: relative;
+  left: -10px;
+  top: -10px;
 }
 
 .shadow img {
