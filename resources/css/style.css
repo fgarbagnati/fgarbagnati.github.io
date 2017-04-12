@@ -1,0 +1,373 @@
+/* GENERAL STYLING */
+html, body {
+	font-family: 'Lato', 'Arial' sans-serif !important;
+	font-weight: 300;
+	font-size: 18px;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+	background-color: #FFFAFA;
+}
+body.no-scroll { 
+	overflow-y: hidden; 
+	height: 100vh;
+}
+
+.row {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.col { width: 48%; }
+
+section {
+	margin-top: 65px;
+}
+
+.section-separator {
+	height: 300px;
+	width: 100%;
+	background-size: cover;
+	color: #fff;
+	background-attachment: fixed;
+}
+
+.float-right { float: right; }
+.float-left; { float: left; }
+
+/* --Icons-- */
+.icon-small {
+	display: inline-block;
+	width: 30px;
+	text-align: center;
+	color: #B44848;
+	font-size: 120%;
+	margin-right: 10px;
+	line-height: 120%;
+	vertical-align: middle;
+	margin-top: -5px;
+}
+
+.icon-big {
+	font-size: 250%;
+	display: block;
+	color: #B44848;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+/* --Links-- */
+a:link, a:visited {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	padding-bottom: 1px;
+	-webkit-transition: border-bottom 0.5s, color 0.5;
+	transition: border-bottom 0.5s, color 0.5s;
+}
+
+a:hover, a:active {
+	border-bottom: 1px solid #fff;
+}
+
+/* --Headings-- */
+h1, h2 {
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h1 {
+	font-size: 180%;
+	word-spacing: 2px;
+	margin-top: 50px;
+	letter-spacing: 1px;
+}
+h1:after {
+	display: block;
+	height: 2px;
+	background-color: #B44848;
+	content: " ";
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+h2 {
+	font-size: 110%;
+	margin: 30px auto 15px auto; 
+}
+
+/* CURTAIN STYLING */
+#curtain {
+	background-image: url('../img/match-stick.png');
+	background-size: contain;
+	background-position: center;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	opacity: 1;
+	z-index: 11;
+}
+
+#curtain.hidden {
+	-webkit-transition: opacity 2s ease-in-out;
+	-moz transition: opacity 2s ease-in-out;
+	-ms-transition: opacity 2s ease-in-out;
+	-o-transition: opacity 2s ease-in-out;
+	opacity: 0;
+}
+
+a#enter {
+	font-size: 3.0em;
+	position: absolute;
+	left: 10%;
+	bottom: 10%;
+}
+a#enter:link, a#enter:visited {
+	border-bottom: 2px solid transparent;
+}
+a#enter:hover, a#enter:active {
+	border-bottom: 2px solid #fff;
+}
+
+svg#flame-drawing {
+	height: 325px;
+	width: auto;
+	position: absolute;
+	top: 8%;
+	left: 50%;
+	margin-left: -125px;
+}
+
+#flame-drawing {
+	display: none;
+}
+
+path {
+	fill: none;
+	stroke: #fff;
+	stroke-width: 4;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+}
+
+#flame {
+	stroke-dasharray: 920;
+	animation: write1 1s linear;
+}
+
+@keyframes write1 {
+	0% {
+		stroke-dashoffset: 920;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+/* HEADER STYLING */
+#header.not-hidden {
+	background: url('../img/smoke.png') no-repeat top center;	
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	height: 60vh;
+	animation: fadeIn 2s;
+}
+
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+.header-text {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60vh;
+	z-index: 10;
+}
+
+svg#title-img {
+	width: 100%;
+	height: inherit;
+}
+
+svg#title-img text {
+	text-anchor: middle;
+}
+
+svg#title-img #alpha {
+	fill: rgb(255,250,250);
+	opacity: 0.7;
+	z-index: 9;
+	height: 100vh;
+	width: 100%;
+}
+
+svg#title-img #title {
+	letter-spacing: -2px;
+	font-size: 3.5em;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+svg#title-img #base {
+	fill: rgb(255,250,250);
+	mask: url(#mask);
+}
+
+/* NAVIGATION */
+nav { width: 100%; }
+nav ul {
+	list-style: none;
+	margin: 55px auto 40px auto;
+	width: 370px;
+	padding: 0px;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 40px;
+}
+nav li.first {
+	margin-left: 40px;
+}
+
+nav a:link, nav a:visited {
+	color: #B44848;
+	border-bottom: 2px solid transparent;
+}
+
+nav a:hover, nav a:active {
+	border-bottom: 1px solid #B44848;
+}
+
+nav img {
+	display: block;
+	height: auto;
+	width: 300px;
+	margin: 0px auto;
+	opacity: 0.4;
+}
+
+/* PORTFOLIO */
+#portfolio p.sub-title {
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#portfolio .row img {
+	height: auto;
+	width: 300px;
+	margin-top: 10px;
+}
+
+.text-left {
+	float: right;
+}
+.text-right {
+	float: left;
+}
+
+#portfolio .games-img {
+	border: 1px solid #000;
+}
+
+#portfolio a:link, #portfolio a:visited {
+	color: #B44848;
+	border-bottom: 2px solid transparent;
+}
+
+#portfolio a:hover, #portfolio a:active {
+	border-bottom: 1px solid #B44848;
+}
+
+#portfolio .text {
+	width: 50%;
+}
+
+.portfolio-separator {
+	background-image: -webkit-linear-gradient(rgba(255,250,250,0.8), rgba(255,250,250,0.8)), url('../img/desk.png');
+	background-image: linear-gradient(rgba(255,250,250,0.8), rgba(255,250,250,0.8)), url('../img/desk.png');
+}
+
+/* ABOUT */
+#about .img img {
+	float: right;
+	height: auto;
+	width: 300px;
+}
+
+#about .text {
+	width: 30%;
+}
+
+#about .education, #about .skills {
+	width: 50%;
+	margin: 0 auto;
+}
+
+#about .education-line-2 {
+	margin-left: 75px;
+}
+
+.about-separator {
+	background-image: -webkit-linear-gradient(rgba(255,250,250,0.8), rgba(255,250,250,0.8)), url('../img/boots.png');
+	background-image: linear-gradient(rgba(255,250,250,0.8), rgba(255,250,250,0.8)), url('../img/boots.png');
+}
+
+/* CONTACT */
+#contact ul {
+	list-style: none;
+	padding: 0px;
+	margin: 40px auto;
+	width: 525px;
+}
+
+#contact li {
+	display: inline-block;
+	margin-right: 60px;
+}
+#contact li.last {
+	margin-right: 0px;
+}
+#contact li img {
+	opacity: 0.6;
+	width: auto;
+}
+#contact li img.linkedin {
+	height: 125px;
+	padding-bottom: 1px;
+}
+#contact li img.github {
+	height: 105px;
+	margin-bottom: -1px;
+}
+
+.contact-separator {
+	background-image: -webkit-linear-gradient(rgba(255,250,250,0.8), rgba(255,250,250,0.8)), url('../img/good.png');
+	background-image: linear-gradient(rgba(255,250,250,0.8), rgba(255,250,250,0.8)), url('../img/good.png');
+}
+
+/* WAYPOINT ANIMATED ELEMENTS */
+.js--wp-1 {
+	opacity: 0;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+.js--wp-1.animated {
+	opacity: 1;
+}
