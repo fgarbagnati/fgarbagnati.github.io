@@ -982,6 +982,7 @@ p.nominalBounds = new cjs.Rectangle(-50,-40,106.4,78.7);
 	this.bird.name = "bird";
 	this.bird.parent = this;
 	this.bird.setTransform(93.8,173.2,0.388,0.387,0,0,0,-0.7,-4.8);
+	this.bird.cache(-52,-42,110,83);
 
 	this.timeline.addTween(cjs.Tween.get(this.bird).wait(1));
 
@@ -1043,7 +1044,7 @@ lib.properties = {
 	color: "#CCCCCC",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/herve.png?1519861125934", id:"herve"}
+		{src:"images/herve.png", id:"herve"}
 	],
 	preloads: []
 };
