@@ -612,9 +612,17 @@ p.nominalBounds = new cjs.Rectangle(-37.1,-34.1,90.3,72.9);
 		Main.prototype.scoredPoint = function() {
 			this.score++;
 			this.ui.updateScore(this.score);
+			createjs.Sound.play("point");
+		}
+		
+		Main.prototype.registerSound = function() {
+			createjs.Sound.registerSound("sound/point.wav", "point");
+			createjs.Sound.registerSound("sound/flap.wav", "flap");
+			createjs.Sound.registerSound("sound/uh_oh.wav", "hit");
 		}
 		
 		var main = new Main();
+		main.registerSound();
 		function Bird() {
 			this.mc = exportRoot.birdve;
 			this.initY = this.mc.y;
@@ -656,6 +664,7 @@ p.nominalBounds = new cjs.Rectangle(-37.1,-34.1,90.3,72.9);
 		Bird.prototype.flap = function() {
 			if (this.state == "alive" && this.mc.y > 0) {
 				this.velocity = Main.FLAP_IMPULSE;
+				createjs.Sound.play("flap");
 			}
 		}
 		
@@ -697,6 +706,7 @@ p.nominalBounds = new cjs.Rectangle(-37.1,-34.1,90.3,72.9);
 			if (this.state == "alive") {
 				this.state = "dying";
 				this.velocity = 0;
+				createjs.Sound.play("hit");
 			}
 		}
 		
